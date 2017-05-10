@@ -44,7 +44,7 @@
 					<li><a href="{% url 'blog_post_list' %}">Articulos</a></li>
 					<li><a href="{% url 'people_colaborador_list' %}">Colaboradores</a></li>
                    {% if user.is_authenticated %}
-                    <li><a href="{% url 'logout' %}">Cerrar sesión - {{ user.username }}</a>
+                    <li><a href="{% url 'logout' %}">Cerrar sesión</a>
                     <ul>
                              <li><a href="{% url 'change_password' %}">Cambiar contraseña</a></li>
                              <li><a href="{% url 'profile' %}">Mi perfil</a></li>
