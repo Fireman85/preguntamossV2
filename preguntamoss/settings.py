@@ -128,7 +128,7 @@ TIME_ZONE = 'America/Bogota'
 
 STATIC_URL = '/static/'
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  #en desarrollo
-STATIC_ROOT = os.path.join(BASE_DIR, "static") en produccion
+STATIC_ROOT = os.path.join(BASE_DIR, "static") #en produccion
 
 #esto ultimo lo agregue YO
 MEDIA_URL = "/media/"
