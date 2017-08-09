@@ -200,7 +200,17 @@ footer #up a{
 
 figure img{
 	float: left;
-	margin-left: 8em;
+	margin-left: 7em;
+	margin-top: 3.5em;
+	border-radius: 20px;
+}
+
+#logocbn{
+	/*float: right;*/
+	position: absolute;
+	left: 85em;
+	top: 1.8em;
+	/*border: 1px solid white;*/
 }
 
 nav{

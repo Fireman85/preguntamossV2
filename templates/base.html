@@ -24,17 +24,17 @@
 
   <div id="container" >
 
-
   <header>
 					
 			 <figure>
-               <!--  <img src="preguntamos3.png" alt ="mi imagen" width="200px" height="100px"> -->
+               
               <a href="{% url 'question_recents_list' %}"> 
-              <img  src="{% static 'site/preguntamos3.png' %}"  alt="Site Logo" width="200px" height="100px">
+            <!--  <img  src="{% static 'site/preguntamos3.png' %}"  alt="Site Logo" width="200px" height="100px"> -->
+              <img  src="{% static 'site/preguntamos3.png' %}"  alt="Site Logo" width="250px" height="80px">
               </a>
             </figure>
 			<nav>
-           		<ul>
+        <ul>
 					<li><a href="{% url 'question_list' %}">Listado de preguntas</a>
                         <ul>
                             <li><a href="{% url 'question_list_withouR' %}">Preguntas sin responder</a></li>
@@ -59,7 +59,21 @@
 
                     </li>
 				</ul>
-			</nav>  
+
+
+			</nav> 
+
+    <div id="logocbn">
+       <a href="http://cbn.edu.co/" target="_blank"> 
+            <!--  <img  src="{% static 'site/preguntamos3.png' %}"  alt="Site Logo" width="200px" height="100px"> -->
+              <img  src="{% static 'site/cbn.png' %}"  alt="Site Logo" width="150px" height="130px">
+      </a>
+      
+
+    </div>
+     
+
+       
     	
     </header>
 
@@ -134,7 +148,7 @@
         <p> Diseño pagina principal: Jonathan Palacios - Estudiante DMCG CBN</p>
       </div>
       <div id="down">
-        <p>Soporte, dudas, sugerencias favor enviar a: ing.firemancda@gmail.com</p>
+        <p>Soporte, dudas, sugerencias favor enviar a: cda@cbn.edu.co</p>
         <p>© {% now 'Y'  %} All Rights Reserved</p>
       </div>
         

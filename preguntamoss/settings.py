@@ -25,7 +25,7 @@ SECRET_KEY = 'seltvn)r==-(zuwd#=irv!n4%yy%#bc-n%_y*gg706qf52ma#*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['preguntamoss.pythonanywhere.com']
+ALLOWED_HOSTS = [] #'preguntamoss.pythonanywhere.com' # en produccion
 
 
 # Application definition
@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'preguntamoss.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',#'django.db.backends.sqlite3',
-        'NAME': 'preguntamoss$default',#os.path.join(BASE_DIR, 'db.sqlite3'), nombre de la base de datos
-        'USER': 'preguntamoss',
-        'PASSWORD': 'Jevousaime85*',
-        'HOST': 'preguntamoss.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.mysql',               #'django.db.backends.sqlite3',
+        'NAME': 'dbpreguntamoss',#'preguntamoss$default',                     #os.path.join(BASE_DIR, 'db.sqlite3'), nombre de la base de datos
+        'USER':  'root',#'preguntamoss',
+        'PASSWORD': 'Jevousaime85*', #'Jevousaime85*',
+        #'HOST': 'preguntamoss.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -127,8 +127,8 @@ TIME_ZONE = 'America/Bogota'
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  #en desarrollo
+#STATIC_ROOT = os.path.join(BASE_DIR, "static") en produccion
 
 #esto ultimo lo agregue YO
 MEDIA_URL = "/media/"
