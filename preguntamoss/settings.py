@@ -25,8 +25,9 @@ SECRET_KEY = 'seltvn)r==-(zuwd#=irv!n4%yy%#bc-n%_y*gg706qf52ma#*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [] #'preguntamoss.pythonanywhere.com' # en produccion
 
+#ALLOWED_HOSTS = [] #'preguntamoss.pythonanywhere.com' # en desarrollo
+ALLOWED_HOSTS = ['preguntamoss.pythonanywhere.com'] # # en produccion
 
 # Application definition
 
@@ -127,8 +128,9 @@ TIME_ZONE = 'America/Bogota'
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  #en desarrollo
-#STATIC_ROOT = os.path.join(BASE_DIR, "static") en produccion
+
+#STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)  #en desarrollo
+STATIC_ROOT = os.path.join(BASE_DIR, "static") #en produccion
 
 #esto ultimo lo agregue YO
 MEDIA_URL = "/media/"
